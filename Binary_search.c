@@ -22,8 +22,7 @@ int main(){
     int arr[]={11,22,33,45,54,65,76,87,98,100};
     int n = sizeof(arr);
     int key;
-
-    printf("%d",&arr);
+ 
     printf("\n Enter the number to find: ");
     scanf("%d",&key);
 
@@ -34,7 +33,7 @@ int main(){
         printf("\n Element is not in the array");
     }
     else{
-        printf("\n element is present in the list at %d",result);
+        printf("\n element is present in the array at index %d",result);
     }
     return 0;
 }
