@@ -22,11 +22,24 @@ class stack{
         }
         else{
             tip --; // we are removing elements from stack and will be required to move an index below to remove the value
-            arr[tip];
+            return arr[tip];
         }
-        return arr[tip] ;
+    }
+    void print(){
+        if(tip<=0){
+            cout<<"stack is empty"<<endl;
+            }
+            else{
+                cout<<"stack:";
+                for(int i=0;i<tip;i++){
+                    cout<<arr[i]<<"  ";
+                    }
+                    cout<<endl;
+                    }
     }
 };
+
+
 int main(){
     stack s;
     s.push(0);
@@ -35,11 +48,18 @@ int main(){
     s.push(3);
     s.push(4);
     s.push(5);
-    cout<<s.pop()<<endl;
-    cout<<s.pop()<<endl;
-    cout<<s.pop()<<endl;
-    cout<<s.pop()<<endl;
-    cout<<s.pop()<<endl;
-    cout<<s.pop()<<endl;
+    s.print();
+    cout<<"popped: "<<s.pop()<<endl;
+    s.print();
+    cout<<"popped: "<<s.pop()<<endl;
+    s.print();
+    cout<<"popped: "<<s.pop()<<endl;
+    s.print();
+    cout<<"popped: "<<s.pop()<<endl;
+    s.print();
+    cout<<"popped: "<<s.pop()<<endl;
+    s.print();
+    cout<<"popped: "<<s.pop()<<endl;
+    s.print();
     return 0;
 }
